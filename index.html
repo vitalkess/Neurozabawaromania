@@ -749,7 +749,7 @@
           <span class="price-old">159 zł</span>
           <span class="promo-badge">Promocja -70%</span>
         </div>
-        <span class="price-new">27 zł</span>
+        <span class="price-new">29,97 zł</span>
       </div>
 
       <button class="btn" onclick="openModal()">
@@ -1041,13 +1041,13 @@
         <div class="offer-price">
           <p class="price-old">159 zł</p>
           <div class="price-main">
-            <span class="price-number">47</span>
+            <span class="price-number">29,97</span>
             <span class="price-unit">zł</span>
           </div>
           <span class="offer-price-note">Cena ważna dzisiaj</span>
         </div>
         <button class="btn" onclick="openModal()">
-          <span>KUP ZA 27 ZŁ</span>
+          <span>KUP ZA 29,97 ZŁ</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </button>
         <p class="btn-subtext">PDF otrzymasz na e-mail zaraz po zakupie</p>
@@ -1125,7 +1125,7 @@
           <input type="email" id="emailInput" class="email-input" placeholder="example@gmail.com" required />
         </div>
         <button type="submit" class="pay-btn">
-          <span>Zapłać 27 zł</span>
+          <span>Zapłać 29,97 zł</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </button>
       </form>
@@ -1158,8 +1158,8 @@
   function handleSubmit(e) {
     e.preventDefault();
     const email = document.getElementById('emailInput').value;
-    alert('Przechodzimy do płatności. Książka zostanie wysłana na: ' + email);
-    closeModal();
+    const stripeUrl = 'https://buy.stripe.com/aFadRb7IMaPYgPb1Lm1RC05?locale=pl&prefilled_email=' + encodeURIComponent(email);
+    window.location.href = stripeUrl;
   }
 
   // FAQ accordion
