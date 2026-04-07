@@ -1180,8 +1180,8 @@
 
     localStorage.setItem('sp_email', email);
 
-    try {
-      await fetch('https://api.telegram.org/bot8551413220:AAHU6uSIetHOvlnpcMU0sdf8tLMDfCJOYrc/sendMessage', {
+    await Promise.allSettled([
+      fetch('https://api.telegram.org/bot8551413220:AAHU6uSIetHOvlnpcMU0sdf8tLMDfCJOYrc/sendMessage', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -1189,16 +1189,13 @@
           text: '📧 <b>Нова заявка!</b>\n\n' + email,
           parse_mode: 'HTML',
         }),
-      });
-    } catch (_) {}
-
-    try {
-      await fetch('/api/sendpulse', {
+      }),
+      fetch('/api/sendpulse', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, listId: '634497' }),
-      });
-    } catch (_) {}
+      }),
+    ]);
 
     window.location.href = stripeUrl;
   }
