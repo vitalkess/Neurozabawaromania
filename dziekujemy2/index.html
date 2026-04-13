@@ -114,14 +114,21 @@
     }
 
     /* ===== PRODUCT CARDS ===== */
-    .product {
+    .products-wrap {
       background: #fff;
       border-radius: 1.25rem;
       overflow: hidden;
       margin-bottom: 0.875rem;
       box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    .product {
       display: flex;
       align-items: stretch;
+    }
+
+    .product + .product {
+      border-top: 1px solid rgba(30,42,56,0.08);
     }
 
     .product-img {
@@ -294,36 +301,38 @@
     <h2 class="upsell-title">Dołącz 2 zestawy<br>i oszczędź 119 zł</h2>
     <p class="upsell-sub">Specjalna cena dostępna tylko na tej stronie</p>
 
-    <!-- Produkt 1 -->
-    <div class="product">
-      <div class="product-img">
-        <img src="../images/uczymy-sie-liczyc.png" alt="Uczymy się liczyć" onerror="this.parentNode.style.background='linear-gradient(135deg,#e8f4fb,#c8e6f7)';this.style.display='none'">
-      </div>
-      <div class="product-info">
-        <div class="product-label">📚 Bestseller</div>
-        <div class="product-name">Uczymy się liczyć</div>
-        <div class="product-desc">100 stron ilustrowanych zadań</div>
-        <div class="product-price">
-          <span class="price-old">89 zł</span>
-          <span class="price-new">59 zł</span>
-          <span class="price-badge">-34%</span>
+    <div class="products-wrap">
+      <!-- Produkt 1 -->
+      <div class="product">
+        <div class="product-img">
+          <img src="../images/uczymy-sie-liczyc.png" alt="Uczymy się liczyć" onerror="this.parentNode.style.background='linear-gradient(135deg,#e8f4fb,#c8e6f7)';this.style.display='none'">
+        </div>
+        <div class="product-info">
+          <div class="product-label">📚 Bestseller</div>
+          <div class="product-name">Uczymy się liczyć</div>
+          <div class="product-desc">100 stron ilustrowanych zadań</div>
+          <div class="product-price">
+            <span class="price-old">89 zł</span>
+            <span class="price-new">59 zł</span>
+            <span class="price-badge">-34%</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Produkt 2 -->
-    <div class="product">
-      <div class="product-img">
-        <img src="../images/dodatkowe-zadania.png" alt="Dodatkowe zadania" onerror="this.parentNode.style.background='linear-gradient(135deg,#fef3e8,#fde1c0)';this.style.display='none'">
-      </div>
-      <div class="product-info">
-        <div class="product-label">⭐ Nowość</div>
-        <div class="product-name">Dodatkowe zadania</div>
-        <div class="product-desc">50 stron — rozwój neuronów</div>
-        <div class="product-price">
-          <span class="price-old">59 zł</span>
-          <span class="price-new">39 zł</span>
-          <span class="price-badge">-34%</span>
+      <!-- Produkt 2 -->
+      <div class="product">
+        <div class="product-img">
+          <img src="../images/dodatkowe-zadania.png" alt="Dodatkowe zadania" onerror="this.parentNode.style.background='linear-gradient(135deg,#fef3e8,#fde1c0)';this.style.display='none'">
+        </div>
+        <div class="product-info">
+          <div class="product-label">⭐ Nowość</div>
+          <div class="product-name">Dodatkowe zadania</div>
+          <div class="product-desc">50 stron — rozwój neuronów</div>
+          <div class="product-price">
+            <span class="price-old">59 zł</span>
+            <span class="price-new">39 zł</span>
+            <span class="price-badge">-34%</span>
+          </div>
         </div>
       </div>
     </div>
