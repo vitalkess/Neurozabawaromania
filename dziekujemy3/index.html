@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dziękujemy za zakup zestawu! — NeiroBook</title>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '932464212863360');
+  fbq('track', 'PageView');
+  fbq('track', 'Purchase', {value: 47, currency: 'PLN'});
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=932464212863360&ev=Purchase&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F5EFE6;
+      --sage: #7A9A86;
+      --navy: #1E2A38;
+      --coral: #E8533A;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--navy);
+      min-height: 100vh;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--sage);
+      padding: 1.25rem 1.25rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 1.4rem; font-weight: 900;
+      color: #fff; margin-bottom: 0.2rem;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.875rem; font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    .btn-download {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #fff; color: var(--sage);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900; font-size: 0.9375rem;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.875rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: transform 0.15s;
+      justify-content: center;
+    }
+
+    .btn-download:active { transform: scale(0.97); }
+
+    .hero-note {
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.65);
+      font-weight: 500;
+    }
+
+    /* ===== PRODUCTS ===== */
+    .content {
+      padding: 1.25rem 1.25rem 2rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 1rem; font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      text-align: center;
+      opacity: 0.6;
+    }
+
+    .products-wrap {
+      background: #fff;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    .product {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .product + .product {
+      border-top: 1px solid rgba(30,42,56,0.08);
+    }
+
+    .product-img {
+      width: 100px;
+      min-height: 90px;
+      flex-shrink: 0;
+      overflow: hidden;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-img img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .product-info {
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.2rem;
+      flex: 1;
+    }
+
+    .product-label {
+      font-size: 0.6875rem; font-weight: 800;
+      color: var(--coral); text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .product-desc {
+      font-size: 0.875rem; font-weight: 700;
+      color: var(--navy);
+      line-height: 1.35;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      color: rgba(30,42,56,0.35);
+      font-weight: 500;
+    }
+
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Dziękujemy za zakup zestawu! 🎉</h1>
+    <p>Płatność przyjęta — oba pliki gotowe do pobrania</p>
+    <div class="downloads">
+      <a href="https://neurozabawa.space/aditionsColors.pdf-1.pdf" download class="btn-download">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Pobierz: Additions Colors (PDF)
+      </a>
+      <a href="https://neurozabawa.space/aditionalactivities.pdf-1.pdf" download class="btn-download">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Pobierz: Additional Activities (PDF)
+      </a>
+    </div>
+    <p class="hero-note">📧 Wysłano na e-mail (sprawdź spam). Pobierz od razu lub napisz: <a href="mailto:neurozabawapl@gmail.com" style="color:#fff;text-decoration:underline;">neurozabawapl@gmail.com</a></p>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <p class="section-title">Twój zestaw zawiera:</p>
+    <div class="products-wrap">
+      <div class="product">
+        <div class="product-img">
+          <img src="../images/uczymy-sie-liczyc.png" alt="Additions Colors" onerror="this.parentNode.style.background='linear-gradient(135deg,#e8f4fb,#c8e6f7)';this.style.display='none'">
+        </div>
+        <div class="product-info">
+          <div class="product-label">📚 Bestseller</div>
+          <div class="product-desc">Uczymy się liczyć – ponad 100 stron ciekawych, ilustrowanych zadań.</div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-img">
+          <img src="../images/dodatkowe-zadania.png" alt="Additional Activities" onerror="this.parentNode.style.background='linear-gradient(135deg,#fef3e8,#fde1c0)';this.style.display='none'">
+        </div>
+        <div class="product-info">
+          <div class="product-label">⭐ Nowość</div>
+          <div class="product-desc">50+ stron dodatkowe zadania wspierające rozwój neuronów</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> NeiroBook &nbsp;·&nbsp;
+    <a href="mailto:neurozabawapl@gmail.com">neurozabawapl@gmail.com</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // SendPulse — Покупці
+    (async () => {
+      const email = localStorage.getItem('sp_email');
+      if (!email) return;
+      localStorage.removeItem('sp_email');
+      try {
+        await fetch('/api/sendpulse', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, listId: '634501' }),
+        });
+      } catch (_) {}
+    })();
+  </script>
+</body>
+</html>
