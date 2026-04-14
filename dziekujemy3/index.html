@@ -236,14 +236,14 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     (async () => {
-      const email = localStorage.getItem('sp_email');
+      const email = localStorage.getItem('sp_upsell_email');
       if (!email) return;
-      localStorage.removeItem('sp_email');
+      localStorage.removeItem('sp_upsell_email');
       try {
         await fetch('/api/sendpulse', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, listId: '634501' }),
+          body: JSON.stringify({ email, listId: '634501' }), // заміни на ID списку допродажів якщо потрібно
         });
       } catch (_) {}
     })();
