@@ -115,8 +115,8 @@ export default async function handler(req, res) {
     // ===== SendPulse =====
     if (email && email !== '—') {
       const amountCents = session.amount_total;
-      if (amountCents === 4700) {
-        await addToSendPulse(email, '641462'); // Зестав — 47 zł
+      if (amountCents === 2997) {
+        await addToSendPulse(email, '641462'); // Зестав — 29,97 zł
       } else {
         await addToSendPulse(email, '634501'); // NeiroBook — 49,97 zł
       }
