@@ -226,6 +226,7 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, listId: '641462' }),
+          keepalive: true,
         });
       } catch (_) {}
     })();
