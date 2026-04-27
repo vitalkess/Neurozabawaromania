@@ -8,7 +8,7 @@ export const Results: React.FC = () => {
       <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full mix-blend-overlay opacity-50 -translate-y-1/2 translate-x-1/2"></div>
 
       <h2 className="text-2xl font-extrabold text-navy mb-8 relative z-10">
-        Tylko 15 minut dziennie:
+        Doar 15 minute pe zi:
       </h2>
 
       <div className="space-y-4 relative z-10">
@@ -17,8 +17,8 @@ export const Results: React.FC = () => {
             <Check size={18} strokeWidth={3} />
           </div>
           <div>
-            <h3 className="font-bold text-navy text-lg">Poprawi się charakter pisma</h3>
-            <p className="text-navy/70 mt-1">Dzięki ćwiczeniom na interakcję międzypółkulową.</p>
+            <h3 className="font-bold text-navy text-lg">Se va îmbunătăți scrisul de mână</h3>
+            <p className="text-navy/70 mt-1">Prin exerciții de interacțiune inter-emisferică.</p>
           </div>
         </div>
 
@@ -27,8 +27,8 @@ export const Results: React.FC = () => {
             <Check size={18} strokeWidth={3} />
           </div>
           <div>
-            <h3 className="font-bold text-navy text-lg">Znikną histerie</h3>
-            <p className="text-navy/70 mt-1">Ćwiczenia oddechowe (np. „Zdmuchiwanie świeczki”).</p>
+            <h3 className="font-bold text-navy text-lg">Vor dispărea crizele de furie</h3>
+            <p className="text-navy/70 mt-1">Exerciții de respirație (ex. „Suflatul lumânării").</p>
           </div>
         </div>
 
@@ -37,8 +37,8 @@ export const Results: React.FC = () => {
             <Check size={18} strokeWidth={3} />
           </div>
           <div>
-            <h3 className="font-bold text-navy text-lg">Wzrosną wyniki w nauce</h3>
-            <p className="text-navy/70 mt-1">Rozwinięty mózg szybciej „chwyta” nowe informacje.</p>
+            <h3 className="font-bold text-navy text-lg">Vor crește rezultatele la învățătură</h3>
+            <p className="text-navy/70 mt-1">Un creier dezvoltat „prinde" mai repede informații noi.</p>
           </div>
         </div>
       </div>

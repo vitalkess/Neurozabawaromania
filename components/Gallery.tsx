@@ -4,27 +4,27 @@ export const Gallery: React.FC = () => {
   const images = [
     {
       src: "https://i.postimg.cc/C1DqKXQ6/Snimok-ekrana-2026-02-17-v-22-01-15.png",
-      caption: "Dyktanda graficzne"
+      caption: "Dictare grafică"
     },
     {
       src: "https://i.postimg.cc/pT8Fd46Q/Snimok-ekrana-2026-02-17-v-22-02-02.png",
-      caption: "Lego-kodowanie"
+      caption: "Codare cu Lego"
     },
     {
       src: "https://i.postimg.cc/pT8Fd46B/Snimok-ekrana-2026-02-17-v-22-15-38.png",
-      caption: "Ćwiczenie 'Ucho-Nos'"
+      caption: 'Exercițiul „Ureche-Nas"'
     },
     {
       src: "https://i.postimg.cc/tTPxgwMB/Snimok-ekrana-2026-02-17-v-22-04-28.png",
-      caption: "Rysowanie lustrzane"
+      caption: "Desen în oglindă"
     }
   ];
 
   return (
     <section className="py-12 bg-white max-w-lg mx-auto overflow-hidden border-t border-gold/10">
       <div className="px-4 mb-6">
-        <h2 className="text-2xl font-bold text-navy mb-2">Zobacz, jak wyglądają zajęcia</h2>
-        <p className="text-navy/60 italic font-medium">„Mamo, daj jeszcze!” — zdanie, które usłyszysz zamiast „Mogę telefon?”</p>
+        <h2 className="text-2xl font-bold text-navy mb-2">Vezi cum arată activitățile</h2>
+        <p className="text-navy/60 italic font-medium">„Mamă, mai vreau!" — propoziția pe care o vei auzi în loc de „Pot telefonul?"</p>
       </div>
 
       <div className="px-4 mb-8">

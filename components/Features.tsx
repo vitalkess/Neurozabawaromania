@@ -5,7 +5,7 @@ export const Features: React.FC = () => {
   return (
     <section className="py-12 px-4 bg-sage-light max-w-lg mx-auto border-t border-gold/10">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-extrabold text-navy">Co jest w środku?</h2>
+        <h2 className="text-3xl font-extrabold text-navy">Ce conține?</h2>
       </div>
 
       <div className="space-y-6">
@@ -17,22 +17,22 @@ export const Features: React.FC = () => {
               <Move size={24} strokeWidth={2.5} />
             </div>
             <div>
-                <h3 className="text-xl font-bold text-navy leading-tight">Część 1. Neurogry na uwagę i energię</h3>
-                <span className="text-sm font-bold text-terracotta">(52 gry ruchowe)</span>
+                <h3 className="text-xl font-bold text-navy leading-tight">Partea 1. Neurojocuri pentru atenție și energie</h3>
+                <span className="text-sm font-bold text-terracotta">(52 jocuri de mișcare)</span>
             </div>
           </div>
           <ul className="space-y-3 text-navy/80 mb-4 pl-1">
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-terracotta mt-2 shrink-0"></div>
-              <span><strong>Co robimy:</strong> Gry ruchowe, aby „zrestartować” mózg i złagodzić napięcie.</span>
+              <span><strong>Ce facem:</strong> Jocuri de mișcare pentru a „reporni” creierul și a reduce tensiunea.</span>
             </li>
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-terracotta mt-2 shrink-0"></div>
-              <span><strong>Topowe ćwiczenia:</strong> „Ucho-Nos”, „Cisza-Szept-Krzyk”, „Cztery żywioły”.</span>
+              <span><strong>Exerciții de top:</strong> „Ureche-Nas”, „Tăcere-Șoaptă-Strigăt”, „Cele patru elemente”.</span>
             </li>
           </ul>
           <div className="bg-terracotta/5 p-3 rounded-lg text-sm text-terracotta font-semibold border border-terracotta/10">
-            Rezultat: Dziecko uczy się słyszeć polecenia za pierwszym razem i kontrolować swoje ciało.
+            Rezultat: Copilul învață să audă comenzile din prima și să-și controleze corpul.
           </div>
         </div>
 
@@ -43,22 +43,22 @@ export const Features: React.FC = () => {
               <BrainCircuit size={24} strokeWidth={2.5} />
             </div>
             <div>
-                <h3 className="text-xl font-bold text-navy leading-tight">Część 2. Rozwój poznawczy</h3>
-                <span className="text-sm font-bold text-navy/60">(29 gier logicznych)</span>
+                <h3 className="text-xl font-bold text-navy leading-tight">Partea 2. Dezvoltare cognitivă</h3>
+                <span className="text-sm font-bold text-navy/60">(29 jocuri logice)</span>
             </div>
           </div>
           <ul className="space-y-3 text-navy/80 mb-4 pl-1">
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0"></div>
-              <span><strong>Co robimy:</strong> Zadania na myślenie przestrzenne, koncentrację i pamięć.</span>
+              <span><strong>Ce facem:</strong> Sarcini de gândire spațială, concentrare și memorie.</span>
             </li>
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0"></div>
-              <span><strong>Topowe gry:</strong> „Zakazana liczba”, „Chrząszcz” (orientacja w kratkach), „Co zmieniło się na stole?”.</span>
+              <span><strong>Jocuri de top:</strong> „Numărul interzis”, „Gândăcelul” (orientare pe caroiaj), „Ce s-a schimbat pe masă?”.</span>
             </li>
           </ul>
           <div className="bg-sand/20 p-3 rounded-lg text-sm text-navy font-semibold border border-gold/20">
-            Rezultat: Dziecko łatwiej zapamiętuje wiersze, materiał szkolny i staje się bardziej uważne.
+            Rezultat: Copilul memorează mai ușor poezii, materia școlară și devine mai atent.
           </div>
         </div>
 
@@ -69,22 +69,22 @@ export const Features: React.FC = () => {
               <Activity size={24} strokeWidth={2.5} />
             </div>
              <div>
-                <h3 className="text-xl font-bold text-navy leading-tight">Część 3. Rozciąganie i Ciało</h3>
-                <span className="text-sm font-bold text-sage">(10 technik relaksacyjnych)</span>
+                <h3 className="text-xl font-bold text-navy leading-tight">Partea 3. Stretching și Corp</h3>
+                <span className="text-sm font-bold text-sage">(10 tehnici de relaxare)</span>
             </div>
           </div>
           <ul className="space-y-3 text-navy/80 mb-4 pl-1">
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-sage mt-2 shrink-0"></div>
-              <span><strong>Co robimy:</strong> Specjalne pozycje do usuwania napięć mięśniowych.</span>
+              <span><strong>Ce facem:</strong> Poziții speciale pentru eliminarea tensiunilor musculare.</span>
             </li>
              <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-sage mt-2 shrink-0"></div>
-              <span><strong>Topowe ćwiczenia:</strong> „Kobra”, „Meduza”, „Drzewo”.</span>
+              <span><strong>Exerciții de top:</strong> „Cobra”, „Meduza”, „Copacul”.</span>
             </li>
           </ul>
           <div className="bg-sage-light p-3 rounded-lg text-sm text-sage font-semibold border border-sage/20">
-            Rezultat: Uspokaja układ nerwowy po siedzeniu w ławce lub przy telefonie.
+            Rezultat: Calmează sistemul nervos după ore la bancă sau la telefon.
           </div>
         </div>
 
@@ -95,22 +95,22 @@ export const Features: React.FC = () => {
               <Wind size={24} strokeWidth={2.5} />
             </div>
             <div>
-                <h3 className="text-xl font-bold text-navy leading-tight">Część 4. Ćwiczenia oddechowe (Antystres)</h3>
-                <span className="text-sm font-bold text-navy/60">(26 praktyk oddechowych)</span>
+                <h3 className="text-xl font-bold text-navy leading-tight">Partea 4. Exerciții de respirație (Antistres)</h3>
+                <span className="text-sm font-bold text-navy/60">(26 practici de respirație)</span>
             </div>
           </div>
           <ul className="space-y-3 text-navy/80 mb-4 pl-1">
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-navy mt-2 shrink-0"></div>
-              <span><strong>Co robimy:</strong> Techniki nasycania mózgu tlenem i kontroli emocjonalnej.</span>
+              <span><strong>Ce facem:</strong> Tehnici de oxigenare a creierului și control emoțional.</span>
             </li>
              <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-navy mt-2 shrink-0"></div>
-              <span><strong>Topowe ćwiczenia:</strong> „Świeczka”, „Balonik”, „Oddychanie nosem”.</span>
+              <span><strong>Exerciții de top:</strong> „Lumânarea”, „Balonul”, „Respirație pe nas”.</span>
             </li>
           </ul>
            <div className="bg-navy/5 p-3 rounded-lg text-sm text-navy font-semibold border border-navy/10">
-            Rezultat: Pomaga dziecku szybko uspokoić się podczas histerii lub przed snem.
+            Rezultat: Ajută copilul să se calmeze rapid în timpul unei crize sau înainte de somn.
           </div>
         </div>
 
@@ -124,22 +124,22 @@ export const Features: React.FC = () => {
               <Gift size={24} strokeWidth={2.5} />
             </div>
             <div>
-                 <h3 className="text-xl font-bold text-navy leading-tight">BONUS: Zeszyty ćwiczeń</h3>
-                 <span className="text-sm font-bold text-navy/60">(50+ stron zadań)</span>
+                 <h3 className="text-xl font-bold text-navy leading-tight">BONUS: Caiete de exerciții</h3>
+                 <span className="text-sm font-bold text-navy/60">(50+ pagini de sarcini)</span>
             </div>
           </div>
           <ul className="space-y-3 text-navy/80 mb-4 pl-1 relative z-10">
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-navy mt-2 shrink-0"></div>
-              <span><strong>Grafomotoryka:</strong> „Rysowanie obiema rękami” (synchronizuje półkule!).</span>
+              <span><strong>Grafomotricitate:</strong> „Desen cu ambele mâini” (sincronizează emisferele!).</span>
             </li>
             <li className="flex gap-3 text-sm items-start">
               <div className="w-1.5 h-1.5 rounded-full bg-navy mt-2 shrink-0"></div>
-              <span><strong>Lego-kodowanie:</strong> Gotowe schematy do rozwoju logiki poprzez klocki.</span>
+              <span><strong>Codare cu Lego:</strong> Scheme gata pentru dezvoltarea logicii prin cuburi.</span>
             </li>
             <li className="flex gap-3 text-sm items-start">
                <div className="w-1.5 h-1.5 rounded-full bg-navy mt-2 shrink-0"></div>
-              <span><strong>Rysowanie lustrzane</strong> i pixel-art („Śmieszne kwadraty”).</span>
+              <span><strong>Desen în oglindă</strong> și pixel-art („Pătrate amuzante”).</span>
             </li>
           </ul>
         </div>
