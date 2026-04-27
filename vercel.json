@@ -3,6 +3,9 @@
   "outputDirectory": ".",
   "installCommand": "",
   "framework": null,
+  "rewrites": [
+    { "source": "/multumim", "destination": "/multumim.html" }
+  ],
   "headers": [
     {
       "source": "/(.*\\.pdf)",
