@@ -1180,6 +1180,10 @@
     e.preventDefault();
     const email = document.getElementById('emailInput').value;
 
+    // Save email for /multumim page
+    localStorage.setItem('ce_email', email);
+
+    // Telegram notification
     fetch('https://api.telegram.org/bot8079806684:AAHL0dwWef2PqeJLnJDgJEGZlQ-0y19L44Y/sendMessage', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -1191,7 +1195,16 @@
       keepalive: true,
     });
 
-    window.location.href = '/multumim';
+    // SendPulse — lista Leads (656488)
+    fetch('/api/sendpulse', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, listId: '656488' }),
+      keepalive: true,
+    });
+
+    const stripeUrl = 'https://buy.stripe.com/7sY8wR5AE1fo8iF61C1RC0m?prefilled_email=' + encodeURIComponent(email);
+    window.location.href = stripeUrl;
   }
 
   // FAQ accordion

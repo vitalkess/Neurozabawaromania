@@ -23,6 +23,19 @@
   </noscript>
   <!-- End Facebook Pixel -->
 
+  <script>
+    // SendPulse — lista Cumpărători (656490)
+    const email = localStorage.getItem('ce_email');
+    if (email) {
+      fetch('/api/sendpulse', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, listId: '656490' }),
+      });
+      localStorage.removeItem('ce_email');
+    }
+  </script>
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 

@@ -16,26 +16,33 @@ async function getToken() {
 }
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
 
-  if (req.method === 'OPTIONS') return res.status(200).end();
-  if (req.method !== 'POST') return res.status(405).end();
+  const { email, listId } = req.body;
 
-  const { email, listId } = req.body || {};
-  if (!email || !listId) return res.status(400).json({ error: 'Missing email or listId' });
+  if (!email || !listId) {
+    return res.status(400).json({ error: 'Missing email or listId' });
+  }
 
-  const token = await getToken();
+  try {
+    const token = await getToken();
 
-  await fetch(`https://api.sendpulse.com/addressbooks/${listId}/emails`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`,
-    },
-    body: JSON.stringify({ emails: [{ email }] }),
-  });
+    const response = await fetch(`https://api.sendpulse.com/addressbooks/${listId}/emails`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        emails: [{ email, variables: {} }],
+      }),
+    });
 
-  res.status(200).json({ ok: true });
+    const result = await response.json();
+    return res.status(200).json({ ok: true, result });
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
+  }
 }
